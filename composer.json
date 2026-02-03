@@ -1,6 +1,7 @@
 {
     "name": "scorpio256/wp-tracy-plugin",
     "description": "(Nette) Tracy connector for WordPress",
+    "version": "1.0.0",
     "keywords": ["tracy", "debugger", "wordpress"],
     "type": "wordpress-muplugin",
     "homepage": "https://github.com/Scorpio256/WP-Tracy-Plugin",

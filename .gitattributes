@@ -1,0 +1,7 @@
+.gitlab-ci.yml export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore
+composer.json export-ignore
+composer.lock export-ignore
+.git export-ignore
+README.md export-ignore
