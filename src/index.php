@@ -4,10 +4,6 @@ add_action("init", "wp_tracy_init_action", 2);
 
 function wp_tracy_init_action()
 {
-    if (defined("DOING_AJAX") && DOING_AJAX) {
-        return; // for IE compatibility WordPress media upload
-    }
-
     $defaultPanelsClasses = [
         "WpTracy\\WpPanel",
         "WpTracy\\WpUserPanel",
@@ -27,7 +23,6 @@ function wp_tracy_init_action()
         "panels-classes" => $defaultPanelsClasses,
         "panels-filtering-allowed" => defined("WP_TRACY_PANELS_FILTERING_ALLOWED") ? WP_TRACY_PANELS_FILTERING_ALLOWED : "on",
     ];
-
     $userSettings = get_option("wp-tracy-user-settings", []);
 
     $settings = wp_parse_args($userSettings, $defaultSettings);
